@@ -67,7 +67,7 @@ class AuthProvider extends ChangeNotifier {
             .where(FirestoreConstants.id, isEqualTo: firebaseUser.uid)
             .get();
         final List<DocumentSnapshot> documents = result.docs;
-        if (documents.length == 0) {
+        if (documents.isEmpty) {
           // Writing data to server because here is a new user
           firebaseFirestore.collection(FirestoreConstants.pathUserCollection).doc(firebaseUser.uid).set({
             FirestoreConstants.nickname: firebaseUser.displayName,
