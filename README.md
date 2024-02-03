@@ -6,7 +6,6 @@
 
 #### -Run this command in the terminal to get the dependencies: 'flutter pub get'.
 
-#### -And make sure the quill package is up-to-date.
 
 ![Screens](assets/images/screens.png)
 
